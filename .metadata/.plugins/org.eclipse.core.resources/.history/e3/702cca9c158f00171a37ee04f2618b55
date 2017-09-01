@@ -1,5 +1,0 @@
-package com.redhat.sample.service.scalar;
-
-public class ServiceChainDTO {
-
-}

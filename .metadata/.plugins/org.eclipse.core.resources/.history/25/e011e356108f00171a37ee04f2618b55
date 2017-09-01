@@ -1,6 +1,0 @@
-package com.redhat.sample.service;
-
-@SpringBootApplication
-public class Application {
-
-}

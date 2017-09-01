@@ -1,3 +1,0 @@
-INDEX VERSION 1.127+/Users/rfoe/workspace/eclipse/openshift/openshift-sample/.metadata/.plugins/org.eclipse.jdt.core
-2629244096.index
-212425205.index
