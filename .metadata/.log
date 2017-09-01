@@ -1,0 +1,256 @@
+!SESSION 2017-09-01 19:58:13.453 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/rfoe/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/rfoe/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2017-09-01 19:58:53.393
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2017-09-01 19:58:58.243
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.objectaid.uml' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-09-01 19:58:58.413
+!MESSAGE Exception caught during execution of command '[git, config, --system, --edit]' in '/usr/bin', return code '128', error message 'fatal: Could not switch to '/Applications/Xcode.app/Contents/Developer/usr/etc/': No such file or directory
+'
+
+!ENTRY org.eclipse.ui 2 2 2017-09-01 19:59:01.004
+!MESSAGE Invalid preference category path: org.apache.directory.studio.ldapbrowser.preferences.EntryEditorsPreferencePage (bundle: org.apache.directory.studio.ldapbrowser.common, page: org.apache.directory.studio.ldapbrowser.preferences.EntryEditorPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2017-09-01 19:59:01.009
+!MESSAGE Invalid preference category path: org.eclipse.birt.report.designer.ui.preferences.DateSetPreferencePage (bundle: org.eclipse.birt.report.data.oda.jdbc.ui, page: org.eclipse.birt.report.data.oda.jdbc.ui.preference.DateSetPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2017-09-01 19:59:01.009
+!MESSAGE Invalid preference category path: org.eclipse.birt.report.designer.ui.preferences.BidiPropertiesPreferencePage (bundle: org.eclipse.birt.report.data.oda.jdbc.ui, page: org.eclipse.birt.report.data.oda.jdbc.ui.util.bidi.preference.JDBCDataSourcePreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2017-09-01 19:59:01.010
+!MESSAGE Invalid preference category path: org.jboss.tools.common.model.ui.MainPreferencePage (bundle: org.jboss.tools.common.jdt.debug.ui, page: org.jboss.tools.common.jdt.debug.ui.preferences.RemoteDebugPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2017-09-01 19:59:01.010
+!MESSAGE Invalid preference category path: org.jboss.tools.common.model.ui.MainPreferencePage (bundle: org.jboss.tools.foundation.ui, page: org.jboss.tools.foundation.ui.internal.credentials.CredentialPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2017-09-01 19:59:01.010
+!MESSAGE Invalid preference category path: org.jboss.tools.common.model.ui.MainPreferencePage (bundle: org.jboss.tools.runtime.ui, page: org.jboss.tools.runtime.preferences.RuntimePreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2017-09-01 19:59:01.010
+!MESSAGE Invalid preference category path: org.jboss.tools.common.model.ui.MainPreferencePage (bundle: org.jboss.tools.usage, page: org.jboss.tools.usage.analytics.preferences.UsageAnalyticsPreferencePage)
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 10 2017-09-01 20:04:16.623
+!MESSAGE Updating the index from remote failed. ; version: 1.100.0.v20160303-1450
+!STACK 0
+java.io.EOFException: Unexpected end of ZLIB input stream
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:240)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.ZipInputStream.read(ZipInputStream.java:194)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at com.google.common.io.ByteStreams.copy(ByteStreams.java:169)
+	at com.google.common.io.ByteSink.writeFrom(ByteSink.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.Zips.unzip(Zips.java:82)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerProblemsHistory$UpdateIndexJob.run(ServerProblemsHistory.java:293)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 10 2017-09-01 20:04:17.117
+!MESSAGE Updating the index from remote failed. ; version: 1.100.0.v20160303-1450
+!STACK 0
+java.io.EOFException: Unexpected end of ZLIB input stream
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:240)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.ZipInputStream.read(ZipInputStream.java:194)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at com.google.common.io.ByteStreams.copy(ByteStreams.java:169)
+	at com.google.common.io.ByteSink.writeFrom(ByteSink.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.Zips.unzip(Zips.java:82)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerProblemsHistory$UpdateIndexJob.run(ServerProblemsHistory.java:293)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-09-01 20:06:09.748
+!MESSAGE Unable to ignore resources
+!STACK 0
+java.lang.IllegalArgumentException: Attempted to beginRule: F/service-discovery/service-hello, does not match outer scope rule: MultiRule[P/service-hello]
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.internal.jobs.ThreadJob.illegalPush(ThreadJob.java:134)
+	at org.eclipse.core.internal.jobs.ThreadJob.push(ThreadJob.java:333)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:85)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:307)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:120)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2189)
+	at org.eclipse.core.internal.resources.File.create(File.java:105)
+	at org.eclipse.core.internal.resources.File.create(File.java:180)
+	at org.eclipse.egit.core.op.IgnoreOperation.addToGitIgnore(IgnoreOperation.java:302)
+	at org.eclipse.egit.core.op.IgnoreOperation.updateGitIgnores(IgnoreOperation.java:257)
+	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:109)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.autoIgnoreDerivedResources(ConnectProviderOperation.java:214)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:163)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:100)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-09-01 20:06:10.500
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-09-01 20:06:10.517
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-09-01 20:06:12.257
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-09-01 20:06:12.262
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-09-01 20:15:47.672
+!MESSAGE Failed to read Maven project: 2 problems were encountered while building the effective model for com.redhat.example:service-hello:1.0.0
+[WARNING] 'parent.relativePath' of POM com.redhat.example:service-hello:1.0.0 (/Users/rfoe/workspace/eclipse/openshift/openshift-sample/service-discovery/service-hello/pom.xml) points at com.redhat.example:service-discovery instead of org.springframework.boot:spring-boot-starter-parent, please verify your project structure @ line 3, column 11
+[FATAL] Non-resolvable parent POM for com.redhat.example:service-hello:1.0.0: Failure to transfer org.springframework.boot:spring-boot-starter-parent:pom:1.3.3.RELEASE from http://repo1.maven.org/maven2/ was cached in the local repository, resolution will not be reattempted until the update interval of maven-central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:pom:1.3.3.RELEASE from/to maven-central (http://repo1.maven.org/maven2/): repo1.maven.org: nodename nor servname provided, or not known and 'parent.relativePath' points at wrong local POM @ line 3, column 11
+ for project com.redhat.example:service-hello:1.0.0 at /Users/rfoe/workspace/eclipse/openshift/openshift-sample/service-discovery/service-hello/pom.xml
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: 2 problems were encountered while building the effective model for com.redhat.example:service-hello:1.0.0
+[WARNING] 'parent.relativePath' of POM com.redhat.example:service-hello:1.0.0 (/Users/rfoe/workspace/eclipse/openshift/openshift-sample/service-discovery/service-hello/pom.xml) points at com.redhat.example:service-discovery instead of org.springframework.boot:spring-boot-starter-parent, please verify your project structure @ line 3, column 11
+[FATAL] Non-resolvable parent POM for com.redhat.example:service-hello:1.0.0: Failure to transfer org.springframework.boot:spring-boot-starter-parent:pom:1.3.3.RELEASE from http://repo1.maven.org/maven2/ was cached in the local repository, resolution will not be reattempted until the update interval of maven-central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:pom:1.3.3.RELEASE from/to maven-central (http://repo1.maven.org/maven2/): repo1.maven.org: nodename nor servname provided, or not known and 'parent.relativePath' points at wrong local POM @ line 3, column 11
+ for project com.redhat.example:service-hello:1.0.0 at /Users/rfoe/workspace/eclipse/openshift/openshift-sample/service-discovery/service-hello/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 2 problems were encountered while building the effective model for com.redhat.example:service-hello:1.0.0
+[WARNING] 'parent.relativePath' of POM com.redhat.example:service-hello:1.0.0 (/Users/rfoe/workspace/eclipse/openshift/openshift-sample/service-discovery/service-hello/pom.xml) points at com.redhat.example:service-discovery instead of org.springframework.boot:spring-boot-starter-parent, please verify your project structure @ line 3, column 11
+[FATAL] Non-resolvable parent POM for com.redhat.example:service-hello:1.0.0: Failure to transfer org.springframework.boot:spring-boot-starter-parent:pom:1.3.3.RELEASE from http://repo1.maven.org/maven2/ was cached in the local repository, resolution will not be reattempted until the update interval of maven-central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:pom:1.3.3.RELEASE from/to maven-central (http://repo1.maven.org/maven2/): repo1.maven.org: nodename nor servname provided, or not known and 'parent.relativePath' points at wrong local POM @ line 3, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1007)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:796)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:325)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161)
+	... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-09-01 20:15:54.033
+!MESSAGE Failed to read Maven project: 2 problems were encountered while building the effective model for com.redhat.example:service-hello:1.0.0
+[WARNING] 'parent.relativePath' of POM com.redhat.example:service-hello:1.0.0 (/Users/rfoe/workspace/eclipse/openshift/openshift-sample/service-discovery/service-hello/pom.xml) points at com.redhat.example:service-discovery instead of org.springframework.boot:spring-boot-starter-parent, please verify your project structure @ line 4, column 10
+[FATAL] Non-resolvable parent POM for com.redhat.example:service-hello:1.0.0: Failure to transfer org.springframework.boot:spring-boot-starter-parent:pom:1.3.3.RELEASE from http://repo1.maven.org/maven2/ was cached in the local repository, resolution will not be reattempted until the update interval of maven-central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:pom:1.3.3.RELEASE from/to maven-central (http://repo1.maven.org/maven2/): repo1.maven.org: nodename nor servname provided, or not known and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+ for project com.redhat.example:service-hello:1.0.0 at /Users/rfoe/workspace/eclipse/openshift/openshift-sample/service-discovery/service-hello/pom.xml
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: 2 problems were encountered while building the effective model for com.redhat.example:service-hello:1.0.0
+[WARNING] 'parent.relativePath' of POM com.redhat.example:service-hello:1.0.0 (/Users/rfoe/workspace/eclipse/openshift/openshift-sample/service-discovery/service-hello/pom.xml) points at com.redhat.example:service-discovery instead of org.springframework.boot:spring-boot-starter-parent, please verify your project structure @ line 4, column 10
+[FATAL] Non-resolvable parent POM for com.redhat.example:service-hello:1.0.0: Failure to transfer org.springframework.boot:spring-boot-starter-parent:pom:1.3.3.RELEASE from http://repo1.maven.org/maven2/ was cached in the local repository, resolution will not be reattempted until the update interval of maven-central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:pom:1.3.3.RELEASE from/to maven-central (http://repo1.maven.org/maven2/): repo1.maven.org: nodename nor servname provided, or not known and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+ for project com.redhat.example:service-hello:1.0.0 at /Users/rfoe/workspace/eclipse/openshift/openshift-sample/service-discovery/service-hello/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:729)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1050)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 2 problems were encountered while building the effective model for com.redhat.example:service-hello:1.0.0
+[WARNING] 'parent.relativePath' of POM com.redhat.example:service-hello:1.0.0 (/Users/rfoe/workspace/eclipse/openshift/openshift-sample/service-discovery/service-hello/pom.xml) points at com.redhat.example:service-discovery instead of org.springframework.boot:spring-boot-starter-parent, please verify your project structure @ line 4, column 10
+[FATAL] Non-resolvable parent POM for com.redhat.example:service-hello:1.0.0: Failure to transfer org.springframework.boot:spring-boot-starter-parent:pom:1.3.3.RELEASE from http://repo1.maven.org/maven2/ was cached in the local repository, resolution will not be reattempted until the update interval of maven-central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:pom:1.3.3.RELEASE from/to maven-central (http://repo1.maven.org/maven2/): repo1.maven.org: nodename nor servname provided, or not known and 'parent.relativePath' points at wrong local POM @ line 4, column 10
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1007)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:796)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:325)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161)
+	... 15 more
+
+!ENTRY org.eclipse.egit.core 4 0 2017-09-01 20:36:20.348
+!MESSAGE An exception occurred during push on URI https://github.com/robinfoe/openshift-sample.git: https://github.com/robinfoe/openshift-sample.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/robinfoe/openshift-sample.git: not authorized
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:172)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:77)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:48)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/robinfoe/openshift-sample.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:495)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:381)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1272)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:161)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2017-09-01 20:36:20.352
+!MESSAGE Can't connect to any repository: https://github.com/robinfoe/openshift-sample.git (https://github.com/robinfoe/openshift-sample.git: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-09-01 20:37:17.051
+!MESSAGE An exception occurred during push on URI https://github.com/robinfoe/openshift-sample.git: https://github.com/robinfoe/openshift-sample.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/robinfoe/openshift-sample.git: not authorized
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:172)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:77)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:48)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/robinfoe/openshift-sample.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:495)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:381)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1272)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:161)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2017-09-01 20:37:17.053
+!MESSAGE Can't connect to any repository: https://github.com/robinfoe/openshift-sample.git (https://github.com/robinfoe/openshift-sample.git: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-09-01 20:37:57.158
+!MESSAGE An exception occurred during push on URI https://github.com/robinfoe/openshift-sample.git: https://github.com/robinfoe/openshift-sample.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/robinfoe/openshift-sample.git: not authorized
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:172)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:77)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:48)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/robinfoe/openshift-sample.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:495)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:381)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1272)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:161)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2017-09-01 20:37:57.159
+!MESSAGE Can't connect to any repository: https://github.com/robinfoe/openshift-sample.git (https://github.com/robinfoe/openshift-sample.git: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-09-01 20:38:50.232
+!MESSAGE An exception occurred during push on URI https://github.com/robinfoe/openshift-sample.git: https://github.com/robinfoe/openshift-sample.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/robinfoe/openshift-sample.git: not authorized
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:172)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:77)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:48)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/robinfoe/openshift-sample.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:495)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:381)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1272)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:161)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2017-09-01 20:38:50.235
+!MESSAGE Can't connect to any repository: https://github.com/robinfoe/openshift-sample.git (https://github.com/robinfoe/openshift-sample.git: not authorized)
