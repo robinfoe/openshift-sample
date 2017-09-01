@@ -6,5 +6,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>service-hello</module>
+  	<module>service-backend</module>
   </modules>
 </project>

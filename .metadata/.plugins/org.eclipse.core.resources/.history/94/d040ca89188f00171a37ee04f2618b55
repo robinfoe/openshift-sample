@@ -1,0 +1,5 @@
+package com.redhat.sample.service;
+
+public class BackendRestService {
+
+}

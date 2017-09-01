@@ -1,0 +1,21 @@
+package com.redhat.sample.service;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.redhat.sample.service.scalar.ServiceChainDTO;
+
+@RestController
+@RequestMapping("/api/backend")
+public class BackendRestService {
+	
+	@RequestMapping(value = "/greet", method = RequestMethod.GET, produces = "text/json")
+	public ServiceChainDTO greet(){
+		ServiceChainDTO response = new ServiceChainDTO();
+		
+		return response;
+		
+	}
+
+}
