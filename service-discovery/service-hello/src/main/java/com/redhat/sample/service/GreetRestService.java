@@ -28,7 +28,7 @@ public class GreetRestService {
 		
 		log.info("Stepping into Gretting");
 		log.info("calling backend : " + this.env.getProperty("backend.chaincall.plain"));
-		ServiceChainDTO response = restfulTemplate.getForObject(this.env.getProperty("backend.chaincall.plain"), ServiceChainDTO.class);
+		ServiceChainDTO response = restfulTemplate.getForObject(this.env.getProperty("backend_chaincall_plain"), ServiceChainDTO.class);
 		return "hello world " +  response.getGreeting();
 	}
 	
