@@ -18,6 +18,7 @@ spec:
       provider: "fabric8"
       demo.name: "loanbroker"
       project: "${project.artifactId}"
+      version: "${project.version}"
       group: "io.fabric8.kubeflix.examples"
   template:
     metadata:
