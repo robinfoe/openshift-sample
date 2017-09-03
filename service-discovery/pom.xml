@@ -7,5 +7,10 @@
   <modules>
   	<module>service-hello</module>
   	<module>service-backend</module>
+  	<module>service-loan-broker</module>
+  	<module>service-broker</module>
+  	<module>service-credit-bureau</module>
+  	<module>service-bank</module>
+  	<module>service-generator</module>
   </modules>
 </project>
