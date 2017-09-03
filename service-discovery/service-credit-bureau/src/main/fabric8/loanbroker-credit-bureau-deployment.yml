@@ -6,8 +6,6 @@ metadata:
     hystrix.enabled: "true"
     provider: "fabric8"
     demo.name: "loanbroker"
-    project: "${project.artifactId}"
-    version: "${project.version}"
     group: "io.fabric8.kubeflix.examples"
   name: "loanbroker-credit-bureau"
 spec:
@@ -17,8 +15,6 @@ spec:
       hystrix.enabled: "true"
       provider: "fabric8"
       demo.name: "loanbroker"
-      project: "${project.artifactId}"
-      version: "${project.version}"
       group: "io.fabric8.kubeflix.examples"
   template:
     metadata:
@@ -26,8 +22,6 @@ spec:
         hystrix.enabled: "true"
         provider: "fabric8"
         demo.name: "loanbroker"
-        project: "${project.artifactId}"
-        version: "${project.version}"
         group: "io.fabric8.kubeflix.examples"
     spec:
       containers:
