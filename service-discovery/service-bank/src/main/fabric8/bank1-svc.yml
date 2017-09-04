@@ -9,12 +9,17 @@ metadata:
     project: "${project.artifactId}"
     version: "${project.version}"
     group: "io.fabric8.kubeflix.examples"
-  name: "loanbroker-credit-bureau"
+  name: "bank1"
 spec:
   ports:
   - port: 80
     protocol: "TCP"
     targetPort: 8080
   selector:
-    name: "service-credit-bureau"
+    hystrix.enabled: "true"
+    provider: "fabric8"
+    bank.id: "bank1"
+    demo.name: "loanbroker"
+    project: "loanbroker-bank"
+    group: "io.fabric8.kubeflix.examples"
   type: "LoadBalancer"

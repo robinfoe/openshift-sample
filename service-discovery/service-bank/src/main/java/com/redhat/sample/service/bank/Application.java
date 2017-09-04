@@ -1,4 +1,4 @@
-package com.redhat.example;
+package com.redhat.sample.service.bank;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

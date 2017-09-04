@@ -13,28 +13,16 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchLabels:
-      hystrix.enabled: "true"
-      provider: "fabric8"
-      demo.name: "loanbroker"
-      project: "${project.artifactId}"
-      group: "io.fabric8.kubeflix.examples"
+  	name: "service-credit-bureau"
   template:
     metadata:
       labels:
-        hystrix.enabled: "true"
-        provider: "fabric8"
-        demo.name: "loanbroker"
-        project: "${project.artifactId}"
-        version: "${project.version}"
-        group: "io.fabric8.kubeflix.examples"
+        name: "service-credit-bureau"
     spec:
       containers:
       - env:
         - name: "KUBERNETES_NAMESPACE"
-          valueFrom:
-            fieldRef:
-              fieldPath: "metadata.namespace"
+          value: "scb-discovery"
         image: "fabric8/service-credit-bureau:${project.version}"
         name: "service-credit-bureau"
         ports:
@@ -45,4 +33,4 @@ spec:
             path: "/ready"
             port: 8080
           initialDelaySeconds: 5
-      serviceAccountName: "fabric8"
+      serviceAccountName: "kubeflix"
