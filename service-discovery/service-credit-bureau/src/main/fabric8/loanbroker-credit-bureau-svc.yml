@@ -5,20 +5,16 @@ metadata:
   labels:
     hystrix.enabled: "true"
     provider: "fabric8"
-    demo.name: "loanbroker"
+    demo.name: "service-credit-bureau"
     project: "${project.artifactId}"
     version: "${project.version}"
     group: "io.fabric8.kubeflix.examples"
-  name: "loanbroker-credit-bureau"
+  name: "service-credit-bureau"
 spec:
   ports:
   - port: 80
     protocol: "TCP"
     targetPort: 8080
   selector:
-    hystrix.enabled: "true"
-    demo.name: "loanbroker"
-    project: "loanbroker-credit-bureau"
-    provider: "fabric8"
-    group: "io.fabric8.kubeflix.examples"
+    name: "service-credit-bureau"
   type: "LoadBalancer"
