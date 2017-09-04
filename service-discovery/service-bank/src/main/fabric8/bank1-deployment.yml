@@ -5,31 +5,21 @@ metadata:
   labels:
     hystrix.enabled: "true"
     provider: "fabric8"
-    demo.name: "loanbroker"
+    name: "bank"
     project: "${project.artifactId}"
     version: "${project.version}"
     group: "io.fabric8.kubeflix.examples"
-  name: "bank1"
+  name: "service-bank"
 spec:
   replicas: 1
   selector:
-    matchLabels:
-      hystrix.enabled: "true"
-      provider: "fabric8"
-      bank.id: "bank1"
-      demo.name: "loanbroker"
-      project: "${project.artifactId}"
-      group: "io.fabric8.kubeflix.examples"
+      name: "service-bank"
   template:
     metadata:
       labels:
         hystrix.enabled: "true"
-        provider: "fabric8"
+        name: "service-bank"
         bank.id: "bank1"
-        demo.name: "loanbroker"
-        project: "${project.artifactId}"
-        version: "${project.version}"
-        group: "io.fabric8.kubeflix.examples"
     spec:
       containers:
       - env:
@@ -55,8 +45,8 @@ spec:
           value: "Bank One"
         - name: "BASE_RATE"
           value: "18"
-        image: "fabric8/loanbroker-bank:${project.version}"
-        name: "loanbroker-bank"
+        image: "fabric8/service-bank:${project.version}"
+        name: "service-bank"
         ports:
         - containerPort: 8080
           name: "http"
@@ -65,4 +55,4 @@ spec:
             path: "/health"
             port: 8080
           initialDelaySeconds: 5
-      serviceAccountName: "fabric8"
+      serviceAccountName: "kubeflix"

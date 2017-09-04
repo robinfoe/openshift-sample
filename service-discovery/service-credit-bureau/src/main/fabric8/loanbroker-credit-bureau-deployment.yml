@@ -12,11 +12,7 @@ metadata:
 spec:
   replicas: 1
   selector:
-<<<<<<< HEAD
-    name: "service-credit-bureau"
-=======
   	name: "service-credit-bureau"
->>>>>>> efe7f8bf9d2b0bd4f4a8a5b4c31fa1ebf20d1ab2
   template:
     metadata:
       labels:
