@@ -21,7 +21,8 @@
 		<bank.id>bank1</bank.id>
 		<bank.name>Bank One</bank.name>
 		<bank.rate>10</bank.rate>
-
+		<docker.from>docker.io/java:8u40</docker.from>
+		<docker.image>${fabric8.dockerUser}${project.artifactId}:${project.version}</docker.image>
 	</properties>
 
 
