@@ -47,6 +47,9 @@ public class RequestQuoteFromBankCommand extends HystrixCommand<Quote> {
 
     @Override
     protected Quote run() throws Exception {
+    	
+    	System.err.println("@@@ " + service.getMetadata().getName() );
+    	
         String url = URLUtils.join("http://" + service.getMetadata().getName(), "/quote?ssn=" + ssn + "&duration=" + duration + "&amount=" + amount);
         return template.getForEntity(url, Quote.class).getBody();
     }
