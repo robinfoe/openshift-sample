@@ -2,6 +2,7 @@ package com.redhat.sample.service.bank;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,9 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 public class BankController {
 	
 	private static final int FALLBACK_SCORE = 500;
+	
+	@Autowired
+	private Environment env;
 
     @Value("${base.rate:10}")
     private float baseRate;
@@ -29,7 +33,8 @@ public class BankController {
             @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "5000")
     })
     public Quote quote(@RequestParam("ssn") Long ssn, @RequestParam("amount") Double amount, @RequestParam("duration") Integer duration) {
-        Integer score = restTemplate.getForObject("http://loanbroker-credit-bureau/eval?ssn={ssn}", Integer.class, ssn);
+//        Integer score = restTemplate.getForObject("http://loanbroker-credit-bureau/eval?ssn={ssn}", Integer.class, ssn);
+    	Integer score = restTemplate.getForObject(this.env.getProperty("CREDIT_BUREAU_URL"), Integer.class, ssn);
         Double rate = baseRate + (double) (duration / 12) / 10 + (double) (1000 - score) / 1000;
         return new Quote(bankName, rate, amount, duration);
     }

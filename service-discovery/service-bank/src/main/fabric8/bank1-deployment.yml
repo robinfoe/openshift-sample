@@ -23,6 +23,8 @@ spec:
     spec:
       containers:
       - env:
+        - name: "CREDIT_BUREAU_URL"
+          value: "http://service-credit-bureau.scb-discovery.svc/eval?ssn={ssn}"
         - name: "SPRING_APPLICATION_NAME"
           value: "bank1"
         - name: "BASE_RATE"
