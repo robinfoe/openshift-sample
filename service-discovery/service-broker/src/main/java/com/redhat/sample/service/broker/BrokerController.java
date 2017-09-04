@@ -40,8 +40,8 @@ import io.fabric8.kubernetes.client.KubernetesClient;
 @RestController
 public class BrokerController {
 
-    private static final String PROJECT_NAME = "project";
-    private static final String LOADBALANCER_BANK = "loanbroker-bank";
+    private static final String PROJECT_NAME = "scb-discovery";
+    private static final String LOADBALANCER_BANK = "service-bank";
 
     private final KubernetesClient client = new DefaultKubernetesClient();
     private final ExecutorService executorService = Executors.newFixedThreadPool(5);
