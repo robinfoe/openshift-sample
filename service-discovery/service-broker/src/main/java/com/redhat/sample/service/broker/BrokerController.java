@@ -17,6 +17,7 @@
 package com.redhat.sample.service.broker;
 
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -25,7 +26,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.stream.Collectors;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -41,7 +41,7 @@ import io.fabric8.kubernetes.client.KubernetesClient;
 @RestController
 public class BrokerController {
 
-    private static final String PROJECT_NAME = "name";
+    private static final String PROJECT_NAME = "project";
     private static final String LOADBALANCER_BANK = "service-bank";
 
     private final KubernetesClient client = new DefaultKubernetesClient();
@@ -80,6 +80,18 @@ public class BrokerController {
                 return result.get(15, TimeUnit.SECONDS);
             }
 
+            System.err.println("@@@ calling services....");
+            
+            for(Service item : client.services().withLabel(PROJECT_NAME, LOADBALANCER_BANK).list().getItems()){
+            	System.err.println(item.getMetadata().getLabels().size());
+            	Map<String, String> metaMaps = item.getMetadata().getLabels();
+            	for(String key : metaMaps.keySet()){
+            		System.err.println(key +" ==> " + metaMaps.get(key) );
+            	}
+            }
+            
+            
+            
             return client.services().withLabel(PROJECT_NAME, LOADBALANCER_BANK).list().getItems().stream()
                     .map(s -> this.requestQuote(s, ssn, amount, duration))
                     .collect(Collectors.toList());
