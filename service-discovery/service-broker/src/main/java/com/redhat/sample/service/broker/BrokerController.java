@@ -52,9 +52,11 @@ public class BrokerController {
         return "true";
     }
 
-    @Autowired
-    private RestTemplate template; //= new RestTemplate();;
-
+//    @Autowired
+//    private RestTemplate template; //= new RestTemplate();;
+    
+    private RestTemplate template = new RestTemplate();
+    
     @Value("${loanbroker.async:false}")
     private Boolean async;
 
