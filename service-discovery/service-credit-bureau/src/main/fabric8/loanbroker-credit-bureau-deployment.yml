@@ -37,7 +37,4 @@ spec:
             path: "/ready"
             port: 8080
           initialDelaySeconds: 5
-<<<<<<< HEAD
-=======
       serviceAccountName: "kubeflix"
->>>>>>> efe7f8bf9d2b0bd4f4a8a5b4c31fa1ebf20d1ab2
