@@ -25,6 +25,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -40,7 +41,7 @@ import io.fabric8.kubernetes.client.KubernetesClient;
 @RestController
 public class BrokerController {
 
-    private static final String PROJECT_NAME = "scb-discovery";
+    private static final String PROJECT_NAME = "name";
     private static final String LOADBALANCER_BANK = "service-bank";
 
     private final KubernetesClient client = new DefaultKubernetesClient();
@@ -51,8 +52,8 @@ public class BrokerController {
         return "true";
     }
 
-//    @Autowired
-    private RestTemplate template = new RestTemplate();;
+    @Autowired
+    private RestTemplate template; //= new RestTemplate();;
 
     @Value("${loanbroker.async:false}")
     private Boolean async;
