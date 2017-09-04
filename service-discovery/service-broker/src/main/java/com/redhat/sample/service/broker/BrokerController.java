@@ -25,7 +25,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.stream.Collectors;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -52,8 +51,8 @@ public class BrokerController {
         return "true";
     }
 
-    @Autowired
-    private RestTemplate template;
+//    @Autowired
+    private RestTemplate template = new RestTemplate();;
 
     @Value("${loanbroker.async:false}")
     private Boolean async;
